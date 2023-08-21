@@ -5,6 +5,7 @@ const postSchema = new mongoose.Schema({
 	body: String,
 	device: String,
 	no_of_comments: Number,
+	user:String,
 });
 
 const postModel = mongoose.model("post", postSchema);
