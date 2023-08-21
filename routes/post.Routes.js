@@ -13,7 +13,7 @@ const { auth } = require("../middleware/authMiddleware");
 
 postRouter.use(auth);
 postRouter.get("/", getUserPosts);
-postRouter.get("/add", createPost);
+postRouter.post("/add", createPost);
 postRouter.get("/top", getTopPosts);
 postRouter.post("/update/:postId", updatePost);
 postRouter.post("/delete", deletePost);
