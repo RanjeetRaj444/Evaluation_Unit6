@@ -16,6 +16,6 @@ postRouter.get("/", getUserPosts);
 postRouter.post("/add", createPost);
 postRouter.get("/top", getTopPosts);
 postRouter.post("/update/:postId", updatePost);
-postRouter.post("/delete", deletePost);
+postRouter.post("/delete/:postId", deletePost);
 
 module.exports = { postRouter };
